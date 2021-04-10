@@ -44,7 +44,6 @@ public with sharing class FileUploader {
         
         cdl.LinkedEntityId = recordId;
         
-        // ShareType is either 'V', 'C', or 'I'
         // V = Viewer, C = Collaborator, I = Inferred
         cdl.ShareType = 'V';
         try {
