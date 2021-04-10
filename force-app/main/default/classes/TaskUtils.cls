@@ -8,10 +8,12 @@ public with sharing class TaskUtils {
                 OwnerId = ado.OwnerId,
                 ActivityDate = Date.today(),
                 Subject = 'Aniversário de adoção',
-                Description = 'Hoje o pet '+ado.Pet__r.Name + ' completa mais uma no que foi adotado por ' + ado.Contato__r.Name + '.'
+                Description = 'Hoje, o pet '+ado.Pet__r.Name + ', completa mais um ano de adoção por ' + ado.Contato__r.Name + '.'
             );
 
             taskList.add(newTask);
+        }
+        if (taskList.size() > 0) {
             insert taskList;
         }
         
