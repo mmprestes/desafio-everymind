@@ -1,7 +1,6 @@
 global class RemindBirthAdocao implements Schedulable {
     
     private List<Adocao__c> adocoes;
-    private List<Task> taskList;
     
     global void execute(SchedulableContext ctx) {
         
